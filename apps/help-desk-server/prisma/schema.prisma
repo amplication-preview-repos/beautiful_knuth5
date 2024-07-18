@@ -1,20 +1,10 @@
 datasource db {
-  provider = "postgresql"
+  provider = "mysql"
   url      = env("DB_URL")
 }
 
 generator client {
   provider = "prisma-client-js"
-}
-
-model Attachment {
-  id        String   @id @default(cuid())
-  createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
-  fileName  String?
-  fileType  String?
-  ticket    Ticket?  @relation(fields: [ticketId], references: [id])
-  ticketId  String?
 }
 
 model Ticket {
@@ -28,6 +18,16 @@ model Ticket {
   userId      String?
   attachments Attachment[]
   comments    Comment[]
+}
+
+model Attachment {
+  id        String   @id @default(cuid())
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  fileName  String?
+  fileType  String?
+  ticket    Ticket?  @relation(fields: [ticketId], references: [id])
+  ticketId  String?
 }
 
 model Comment {

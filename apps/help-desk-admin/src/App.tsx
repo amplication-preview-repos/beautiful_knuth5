@@ -5,14 +5,14 @@ import { theme } from "./theme/theme";
 import Login from "./Login";
 import "./App.scss";
 import Dashboard from "./pages/Dashboard";
-import { AttachmentList } from "./attachment/AttachmentList";
-import { AttachmentCreate } from "./attachment/AttachmentCreate";
-import { AttachmentEdit } from "./attachment/AttachmentEdit";
-import { AttachmentShow } from "./attachment/AttachmentShow";
 import { TicketList } from "./ticket/TicketList";
 import { TicketCreate } from "./ticket/TicketCreate";
 import { TicketEdit } from "./ticket/TicketEdit";
 import { TicketShow } from "./ticket/TicketShow";
+import { AttachmentList } from "./attachment/AttachmentList";
+import { AttachmentCreate } from "./attachment/AttachmentCreate";
+import { AttachmentEdit } from "./attachment/AttachmentEdit";
+import { AttachmentShow } from "./attachment/AttachmentShow";
 import { CommentList } from "./comment/CommentList";
 import { CommentCreate } from "./comment/CommentCreate";
 import { CommentEdit } from "./comment/CommentEdit";
@@ -48,18 +48,18 @@ const App = (): React.ReactElement => {
         loginPage={Login}
       >
         <Resource
-          name="Attachment"
-          list={AttachmentList}
-          edit={AttachmentEdit}
-          create={AttachmentCreate}
-          show={AttachmentShow}
-        />
-        <Resource
           name="Ticket"
           list={TicketList}
           edit={TicketEdit}
           create={TicketCreate}
           show={TicketShow}
+        />
+        <Resource
+          name="Attachment"
+          list={AttachmentList}
+          edit={AttachmentEdit}
+          create={AttachmentCreate}
+          show={AttachmentShow}
         />
         <Resource
           name="Comment"

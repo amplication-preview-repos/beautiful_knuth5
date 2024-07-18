@@ -1,6 +1,6 @@
 import { Module } from "@nestjs/common";
-import { AttachmentModule } from "./attachment/attachment.module";
 import { TicketModule } from "./ticket/ticket.module";
+import { AttachmentModule } from "./attachment/attachment.module";
 import { CommentModule } from "./comment/comment.module";
 import { UserModule } from "./user/user.module";
 import { HealthModule } from "./health/health.module";
@@ -22,8 +22,8 @@ import { AuthModule } from "./auth/auth.module";
     StorageModule,
     ACLModule,
     AuthModule,
-    AttachmentModule,
     TicketModule,
+    AttachmentModule,
     CommentModule,
     UserModule,
     HealthModule,

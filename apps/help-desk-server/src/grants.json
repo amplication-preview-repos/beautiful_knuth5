@@ -1,8 +1,80 @@
 [
   {
+    "role": "admin",
+    "resource": "Ticket",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Ticket",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "Ticket",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Ticket",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "Ticket",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Ticket",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "Ticket",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Ticket",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "Ticket",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Ticket",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "Attachment",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
     "role": "user",
     "resource": "Attachment",
     "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "Attachment",
+    "action": "create:any",
     "attributes": "*"
   },
   {
@@ -12,7 +84,7 @@
     "attributes": "*"
   },
   {
-    "role": "user",
+    "role": "admin",
     "resource": "Attachment",
     "action": "update:any",
     "attributes": "*"
@@ -20,7 +92,25 @@
   {
     "role": "user",
     "resource": "Attachment",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "Attachment",
     "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Attachment",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "Attachment",
+    "action": "read:any",
     "attributes": "*"
   },
   {
@@ -30,69 +120,81 @@
     "attributes": "*"
   },
   {
-    "role": "user",
-    "resource": "Ticket",
+    "role": "admin",
+    "resource": "Comment",
     "action": "read:own",
     "attributes": "*"
   },
   {
     "role": "user",
-    "resource": "Ticket",
+    "resource": "Comment",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "Comment",
     "action": "create:any",
     "attributes": "*"
   },
   {
     "role": "user",
-    "resource": "Ticket",
+    "resource": "Comment",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "Comment",
     "action": "update:any",
     "attributes": "*"
   },
   {
     "role": "user",
-    "resource": "Ticket",
+    "resource": "Comment",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "Comment",
     "action": "delete:any",
     "attributes": "*"
   },
   {
     "role": "user",
-    "resource": "Ticket",
+    "resource": "Comment",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "Comment",
     "action": "read:any",
     "attributes": "*"
   },
   {
     "role": "user",
     "resource": "Comment",
-    "action": "read:own",
-    "attributes": "*"
-  },
-  {
-    "role": "user",
-    "resource": "Comment",
-    "action": "create:any",
-    "attributes": "*"
-  },
-  {
-    "role": "user",
-    "resource": "Comment",
-    "action": "update:any",
-    "attributes": "*"
-  },
-  {
-    "role": "user",
-    "resource": "Comment",
-    "action": "delete:any",
-    "attributes": "*"
-  },
-  {
-    "role": "user",
-    "resource": "Comment",
     "action": "read:any",
     "attributes": "*"
   },
   {
+    "role": "admin",
+    "resource": "User",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
     "role": "user",
     "resource": "User",
     "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "User",
+    "action": "create:any",
     "attributes": "*"
   },
   {
@@ -102,7 +204,7 @@
     "attributes": "*"
   },
   {
-    "role": "user",
+    "role": "admin",
     "resource": "User",
     "action": "update:any",
     "attributes": "*"
@@ -110,7 +212,25 @@
   {
     "role": "user",
     "resource": "User",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "User",
     "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "User",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "User",
+    "action": "read:any",
     "attributes": "*"
   },
   {
